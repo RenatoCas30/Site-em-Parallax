@@ -1,0 +1,71 @@
+html,body {
+	height: 100%;
+	margin: 0;
+	font-size: 25px;
+	font-family:serif;
+	font-weight: 500;
+	line-height: 1em;
+	color: #387A37;
+}
+
+	
+
+.imagem1, .imagem2,.imagem3 {
+	position: relative;
+	opacity: 0.90;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.imagem1 {
+	background-image: url('../img/rd1.jpg');
+	min-height: 100%;
+}
+
+.imagem2 {
+	background-image: url('../img/rd2.jpg');
+	min-height: 400px;
+}
+.imagem3 {
+	background-image: url('../img/rd3.jpg');
+	min-height: 400px;
+}
+section {
+	text-align: center;
+	padding: 50px 80px;
+}
+.fundo-verde-claro {
+	background-color: #F5FFF5;
+	color: #152E15;
+}
+.fundo-verde-escuro {
+	background-color:#152E15 ;
+	color:#F5FFF5 ;
+}
+
+.texto1 {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color:#152E15 ;
+	font-size: 50px;
+	letter-spacing: 10px;
+	text-transform:uppercase;
+
+}
+.texto1 .borda {
+	background: #387A37;
+	color:#F5FFF5;
+	padding: 20px;
+}
+.texto1, .borda, .borda-transparente {
+	background-color: transparent;
+
+}
+@media(max-width:568px){
+  .rd1, .rd2, .rd3{
+    background-attachment:scroll;
+  }
+}

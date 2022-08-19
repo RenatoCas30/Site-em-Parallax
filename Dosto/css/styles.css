@@ -1,0 +1,83 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:20px;
+  font-family:"Lato", sans-serif;
+  font-weight:1000px;
+  line-height:1.8em;
+  color:#A39256;
+  }
+  .pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+/*
+    fixed = parallax
+    scroll = normal
+  */
+
+.pimg1{
+  background-image:url('../img/dosto.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/dosto2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/dosto3.jpg');
+  min-height:400px;
+
+}
+
+.section {
+text-align:center;
+  padding:50px 80px;
+}
+  
+
+.section-light{
+  background-color:#FEF6F1;
+  color:#968554;
+}
+
+.section-dark {
+  background-color:#7E5C43;
+  color:#FEF6F1;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:px;
+  text-transform:uppercase;
+}
+.ptext .border{
+  background-color:#39291D;
+  color:#fff;
+  padding:20px;
+}
+
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
